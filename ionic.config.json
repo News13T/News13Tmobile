@@ -1,0 +1,8 @@
+{
+  "name": "News13Tmobile",
+  "app_id": "cf6870db",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
