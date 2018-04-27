@@ -5,7 +5,7 @@
         <img class="card-img-top image" [src]="user.image" alt="Card image cap">
         <div *ngIf='user.provider != "password"'class="card-body">
           <h4 class="card-title">{{user.name}}</h4>
-          <p class="card-text">Ceci est un test. </p>
+          <p class="card-text">Ceci est un test !</p>
         </div>
         <div *ngIf='user.provider == "password"'class="card-body">
           <form [formGroup]="profileForm">
