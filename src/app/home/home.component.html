@@ -1,23 +1,26 @@
+    <ion-item>
+      <button type="button" (click)="logout()" class="btn btn-link" item-right>Se déconnecter</button>
+    </ion-item> 
     <ion-row>
       <ion-label class="header">MENU</ion-label>
     </ion-row>
     <ion-grid class="flex-col">
       <ion-row>
         <ion-col>
-          <button  ion-button class="sports_button" (click)="goToSport()" item-left>Sports</button>    
+          <button  ion-button class="sports_button" tappable routerLink="/main">Sports</button>    
         </ion-col>
         <ion-col>
-          <button ion-button class="events_button" (click)="goToEvent()" item-left>Évènements</button>
+          <button ion-button class="events_button" tappable routerLink="/main">Évènements</button>
         </ion-col>
       </ion-row>
     </ion-grid>
     <ion-grid class="flex-col">
         <ion-row>
           <ion-col>
-            <button  ion-button class="commerces_button" (click)="goToSport()" item-left>Commerces</button>    
+            <button  ion-button class="commerces_button" tappable routerLink="/main">Commerces</button>    
           </ion-col>
           <ion-col>
-            <button ion-button class="informations_button" (click)="goToEvent()" item-left>Informations</button>
+            <button ion-button class="informations_button" tappable routerLink="/main">Informations</button>
           </ion-col>
         </ion-row>
     </ion-grid>

@@ -29,37 +29,13 @@ export class RegisterComponent {
      });
    }
 
-   tryFacebookLogin(){
-     this.authService.doFacebookLogin()
-     .then(res =>{
-       this.router.navigate(['/user']);
-     }, err => console.log(err)
-     )
-   }
-
-   tryTwitterLogin(){
-     this.authService.doTwitterLogin()
-     .then(res =>{
-       this.router.navigate(['/user']);
-     }, err => console.log(err)
-     )
-   }
-
-   tryGoogleLogin(){
-     this.authService.doGoogleLogin()
-     .then(res =>{
-       this.router.navigate(['/user']);
-     }, err => console.log(err)
-     )
-   }
-
    tryRegister(value){
      this.authService.doRegister(value)
      .then(res => {
        console.log(res);
        this.errorMessage = "";
        this.successMessage = "Votre compte a été créé";
-       this.router.navigate(['/user']);
+       this.router.navigate(['/home']);
      }, err => {
        console.log(err);
        this.errorMessage = err.message;

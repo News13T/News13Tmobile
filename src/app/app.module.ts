@@ -5,8 +5,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+//import { HomePage } from '../pages/home/home';
+//import { ListPage } from '../pages/list/list';
+import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user/user.component';
 import { RegisterComponent } from './register/register.component';
@@ -19,18 +20,20 @@ import { AuthGuard } from './core/auth.guard';
 import { AuthService } from './core/auth.service';
 import { UserService } from './core/user.service';
 import { rootRouterConfig } from './app.routes';
-
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { MainpageComponent } from './mainpage/mainpage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomePage,
-    ListPage,
+    //HomePage,
+    //ListPage,
     LoginComponent,
     UserComponent,
-    RegisterComponent
+    RegisterComponent,
+    HomeComponent,
+    MainpageComponent
   ],
   imports: [
     BrowserModule,
@@ -44,8 +47,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     AppComponent,
-    HomePage,
-    ListPage
+    //HomePage,
+    //ListPage
   ],
   providers: [
     StatusBar,

@@ -53,7 +53,7 @@ export class UserComponent implements OnInit{
   logout(){
     this.authService.doLogout()
     .then((res) => {
-      this.location.back();
+      this.location.go("/login");
     }, (error) => {
       console.log("Logout error", error);
     });
