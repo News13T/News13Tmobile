@@ -1,0 +1,20 @@
+{
+  "name": "news13tmobile",
+  "description": "An Ionic project",
+  "main": "",
+  "authors": [
+    "Ionic Framework"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/News13T/news13tmobile",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ionic-social-buttons": "^1.1.1"
+  }
+}
