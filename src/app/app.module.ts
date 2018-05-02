@@ -7,22 +7,25 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 //import { HomePage } from '../pages/home/home';
 //import { ListPage } from '../pages/list/list';
-import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
-import { UserComponent } from './user/user.component';
-import { RegisterComponent } from './register/register.component';
+import { HomeComponent } from '../pages/home/home.component';
+import { LoginComponent } from '../pages/login/login.component';
+import { UserComponent } from '../pages/user/user.component';
+import { RegisterComponent } from '../pages/register/register.component';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { environment } from '../environments/environment';
-import { UserResolver } from './user/user.resolver';
+import { UserResolver } from '../pages/user/user.resolver';
 import { AuthGuard } from './core/auth.guard';
 import { AuthService } from './core/auth.service';
 import { UserService } from './core/user.service';
 import { rootRouterConfig } from './app.routes';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { MainpageComponent } from './mainpage/mainpage.component';
+import { SportsComponent } from '../pages/sports/sports.component';
+import { CommercesComponent } from '../pages/commerces/commerces.component';
+import { EvenementsComponent } from '../pages/evenements/evenements.component';
+import { InformationsComponent } from '../pages/informations/informations.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { MainpageComponent } from './mainpage/mainpage.component';
     UserComponent,
     RegisterComponent,
     HomeComponent,
-    MainpageComponent
+    SportsComponent,
+    CommercesComponent,
+    EvenementsComponent,
+    InformationsComponent
   ],
   imports: [
     BrowserModule,
