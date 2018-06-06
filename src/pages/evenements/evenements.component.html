@@ -1,15 +1,19 @@
 <ion-header>
-
     <ion-navbar>
-      <button ion-button [menuToggle]="activeMenu">
-        <ion-icon name="menu"></ion-icon>
-      </button>
-      <ion-title>
-        13T NEWS
-      </ion-title>
-      <div>
-        <button ion-button tappable routerLink="/home" float-right>Home</button>
-      </div>
+      <ion-row>
+        <ion-col>
+          <button ion-button menuToggle="activeMenu" item-left>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col>
+          <ion-title text-center>
+            Évènements
+          </ion-title>
+        </ion-col>
+        <ion-col>
+          <button ion-button tappable routerLink="/home" item-right>Menu</button>
+        </ion-col>
+      </ion-row>
     </ion-navbar>
-  
   </ion-header>
